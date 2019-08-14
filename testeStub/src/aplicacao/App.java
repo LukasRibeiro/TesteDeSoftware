@@ -13,6 +13,8 @@ import modelo.UsuarioDaoStub;
  *
  * @author Lucas Ribeiro
  */
+
+/*O stub tem como objetivo fornecer dados prontos*/
 public class App {
     public static void main(String[] args) {
         

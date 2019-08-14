@@ -13,11 +13,11 @@ import static jdk.nashorn.internal.runtime.Debug.id;
  */
 public class Usuario {
     
-    private long id;
+    private Long id;
     private String nome;
     private String senha;
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 

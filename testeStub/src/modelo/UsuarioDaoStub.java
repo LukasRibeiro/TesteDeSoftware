@@ -5,6 +5,8 @@
  */
 package modelo;
 
+import java.util.List;
+
 /**
  *
  * @author Lucas Ribeiro
@@ -33,6 +35,21 @@ public class UsuarioDaoStub implements UsuarioDao {
        }
        
        return usuario;
+    }
+
+    @Override
+    public List<Usuario> buscar(Usuario usuario) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
+    @Override
+    public Integer getContadorBuscar() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public Integer getContadorInserir() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }

@@ -5,6 +5,8 @@
  */
 package modelo;
 
+import java.util.List;
+
 /**
  *
  * @author Lucas Ribeiro
@@ -12,7 +14,7 @@ package modelo;
 public interface UsuarioDao {
     
     public Usuario inserir (Usuario usuario);
-    
-    
-    
+    public List<Usuario> buscar (Usuario usuario);
+    public Integer getContadorBuscar();
+    public Integer getContadorInserir();
 }

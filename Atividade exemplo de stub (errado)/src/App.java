@@ -15,13 +15,8 @@ public class App {
     public static void main (String [] Args){
         
         Calculadora cal = new Calculadora();
-        CalculadoraDao calDao = new CalculadoraStub();
+        CalculadoraInterface calInter = new CalculadoraStub();
         
-        int s = 0;
-        
-        cal.setX(5);
-        cal.setY(10);
-        
-        System.out.println(calDao.subrair(cal.getX(), cal.getY()));
+        System.out.println(calInter.subrair(20, 10));
     }
 }

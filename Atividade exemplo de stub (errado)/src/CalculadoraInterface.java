@@ -10,7 +10,7 @@ import model.Calculadora;
  *
  * @author Lucas Ribeiro
  */
-public interface CalculadoraDao {
+public interface CalculadoraInterface {
     
     public int subrair(int x , int y);
 }

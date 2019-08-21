@@ -10,11 +10,22 @@ import model.Calculadora;
  *
  * @author Lucas Ribeiro
  */
-public class CalculadoraStub implements CalculadoraDao{
+public class CalculadoraStub implements CalculadoraInterface{
 
     @Override
     public int subrair(int x, int y) {
         
-        return x - y;
+        if(x == 10 && y == 5)
+            return 5;
+        
+        if(x == 7 && y == 2)
+            return 5;
+        
+        if(x == 20 && y == 10)
+            return 10;
+        
+        if(x == 15 && y == 14)
+            return 1;
+        return 0;
     }
 }

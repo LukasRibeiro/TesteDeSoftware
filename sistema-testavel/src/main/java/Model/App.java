@@ -4,17 +4,7 @@
 
 package Model;
 
-import javax.swing.JFrame;
-import java.awt.Container;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JTextField;
 // import model.AnalisadorSequencia;
-import Model.AcoesBotao;
 
 public class App{
 
@@ -22,7 +12,7 @@ public class App{
 
       Janela window = new Janela();
 
-      //abrir janela
+      //Executar testes pela interface
       window.criarJanela();
     }
 }

@@ -15,11 +15,11 @@ plugins {
 }
 
 // Define the main class for the application
-mainClassName = 'App'
+mainClassName = 'Model/App'
 
 dependencies {
 
-    runtime files("libs/analisador_sequencia_dist.jar")
+    runtime files("analisador_sequencia_dist.jar")
     compile fileTree(dir: "libs", include: "*.jar")
 
     testCompileOnly 'org.junit.jupiter:junit-jupiter-api:5.3.1'

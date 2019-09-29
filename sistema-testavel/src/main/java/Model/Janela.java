@@ -8,7 +8,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
-// import model.AnalisadorSequencia;
+
 import Model.AcoesBotao;
 
 public class Janela extends JFrame{
@@ -67,21 +67,22 @@ public class Janela extends JFrame{
 
 //=====================================================================================
 
-      //executar o botao limpar
+//       metodos para executar as acoes dos botoes
 
-    //   botaoLimpar.addActionListener(new ActionListener(){
+        //metodo para limpar os campos inseridos
+      botaoLimpar.addActionListener(new ActionListener(){
       
-    //     public void actionPerformed(ActionEvent evt){
-    //       act.limparCampos(SetValor, SetSaida);
-    //     }
-    //   });
+        public void actionPerformed(ActionEvent evt){
+                act.limparCampos(SetValor, SetSaida);
+        }
+      });
 
-    // // Códigos de execução Botão Testar
-    // botaoTestar.addActionListener(new ActionListener(){
-    //     public void actionPerformed(ActionEvent evt){
-    //         SetSaida.setText("" + act.testarCampos(SetValor));
-    //     }
-    // });           
+    // metodo para testar os valores inseridos no campo
+    botaoTestar.addActionListener(new ActionListener(){
+        public void actionPerformed(ActionEvent evt){
+                SetSaida.setText("" + act.testarCampos(SetValor));
+        }
+    });           
     
     }
 }

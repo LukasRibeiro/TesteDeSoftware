@@ -32,8 +32,8 @@ public class Janela extends JFrame{
         JTextField SetSaida = new JTextField(10);
         
         //botoes da janela
-        JButton botaoTestar = new JButton("Testar");
-        JButton botaoLimpar = new JButton("Limpar campos");
+        JButton botaoTestar = new JButton("Executar");
+        JButton botaoLimpar = new JButton("Apagar");
         
         
 //=====================================================================================
@@ -46,8 +46,8 @@ public class Janela extends JFrame{
         SetSaida.setBounds(200,80,100,20);
         
         //posicionamento botao
-        botaoTestar.setBounds(50,120,250,20);
-        botaoLimpar.setBounds(50,160,250,20);
+        botaoTestar.setBounds(50,120,150,20);
+        botaoLimpar.setBounds(50,160,150,20);
 
 //=====================================================================================
 

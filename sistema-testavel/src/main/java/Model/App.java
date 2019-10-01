@@ -6,13 +6,13 @@ package Model;
 
 // import model.AnalisadorSequencia;
 
-public class App{
+public class App {
 
-    public static void main(String[] args) {
+  public static void main(String[] args) {
 
-      Janela window = new Janela();
+    Janela window = new Janela();
 
-      //Executar testes pela interface
-      window.criarJanela();
-    }
+    //Executar testes pela interface
+    window.criarJanela();
+  }
 }

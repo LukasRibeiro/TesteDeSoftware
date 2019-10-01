@@ -11,7 +11,7 @@ import javax.swing.JTextField;
 
 import Model.AcoesBotao;
 
-public class Janela extends JFrame{
+public class Janela extends JFrame {
 
     AcoesBotao act = new AcoesBotao();
 
@@ -26,7 +26,7 @@ public class Janela extends JFrame{
         //input para digitar entrada
         JLabel valor = new JLabel("Entrada: ");
         JTextField SetValor = new JTextField(10);
-        
+
         //input para mostrar saida
         JLabel resultado = new JLabel("Saida: ");
         JTextField SetSaida = new JTextField(10);
@@ -40,10 +40,10 @@ public class Janela extends JFrame{
 
         //posicionamento dos campos de entrada e saida da janela
         valor.setBounds(50,40,100,20);
-        resultado.setBounds(200,40,100,20);
+        resultado.setBounds(150,40,100,20);
 
         SetValor.setBounds(50,80,100,20);
-        SetSaida.setBounds(200,80,100,20);
+        SetSaida.setBounds(150,80,100,20);
         
         //posicionamento botao
         botaoTestar.setBounds(50,120,150,20);
@@ -82,7 +82,6 @@ public class Janela extends JFrame{
         public void actionPerformed(ActionEvent evt){
                 SetSaida.setText("" + act.testarCampos(SetValor));
         }
-    });           
-    
+    });
     }
 }

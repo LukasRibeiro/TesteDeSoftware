@@ -10,7 +10,6 @@ public class AcoesBotao {
     
     AnalisadorSequencia chamaOMetodoPara = new AnalisadorSequencia();
 
-
     public void limparCampos(JTextField entrada, JTextField saida){
 
         entrada.setText("");

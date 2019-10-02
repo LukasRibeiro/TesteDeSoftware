@@ -15,8 +15,79 @@ public class Janela extends JFrame {
 
     AcoesBotao act = new AcoesBotao();
 
-    //metodo para abrir a janela
-    public void criarJanela(){
+    private JTextField ValorEntrada;
+    private JTextField ValorSaida;
+
+    private JButton botaoTestar;
+    private JButton botaoLimpar;
+
+public AcoesBotao getAct() {
+        return this.act;
+}
+
+public void setAct(AcoesBotao act) {
+        this.act = act;
+}
+
+public JTextField getValorEntrada() {
+        return this.ValorEntrada;
+}
+
+public void setValorEntrada(JTextField ValorEntrada) {
+        this.ValorEntrada = ValorEntrada;
+}
+
+public JTextField getValorSaida() {
+        return this.ValorSaida;
+}
+
+public void setValorSaida(JTextField ValorSaida) {
+        this.ValorSaida = ValorSaida;
+}
+
+public JButton getBotaoTestar() {
+        return this.botaoTestar;
+}
+
+public void setBotaoTestar(JButton botaoTestar) {
+        this.botaoTestar = botaoTestar;
+}
+
+public JButton getBotaoLimpar() {
+        return this.botaoLimpar;
+}
+
+public void setBotaoLimpar(JButton botaoLimpar) {
+        this.botaoLimpar = botaoLimpar;
+}
+
+public Janela act(AcoesBotao act) {
+        this.act = act;
+        return this;
+}
+
+public Janela ValorEntrada(JTextField ValorEntrada) {
+        this.ValorEntrada = ValorEntrada;
+        return this;
+}
+
+public Janela ValorSaida(JTextField ValorSaida) {
+        this.ValorSaida = ValorSaida;
+        return this;
+}
+
+public Janela botaoTestar(JButton botaoTestar) {
+        this.botaoTestar = botaoTestar;
+        return this;
+}
+
+public Janela botaoLimpar(JButton botaoLimpar) {
+        this.botaoLimpar = botaoLimpar;
+        return this;
+}
+
+//     metodo para abrir a janela
+public void criarJanela() {
 
         Container jal = getContentPane();
         setLayout(null);
@@ -25,15 +96,15 @@ public class Janela extends JFrame {
 
         //input para digitar entrada
         JLabel valor = new JLabel("Entrada: ");
-        JTextField SetValor = new JTextField(10);
+        ValorEntrada = new JTextField(10);
 
         //input para mostrar saida
         JLabel resultado = new JLabel("Saida: ");
-        JTextField SetSaida = new JTextField(10);
+        ValorSaida = new JTextField(10);
         
         //botoes da janela
-        JButton botaoTestar = new JButton("Executar");
-        JButton botaoLimpar = new JButton("Apagar");
+        botaoTestar = new JButton("Executar");
+        botaoLimpar = new JButton("Apagar");
         
         
 //=====================================================================================
@@ -42,8 +113,8 @@ public class Janela extends JFrame {
         valor.setBounds(50,40,100,20);
         resultado.setBounds(150,40,100,20);
 
-        SetValor.setBounds(50,80,100,20);
-        SetSaida.setBounds(150,80,100,20);
+        ValorEntrada.setBounds(50,80,100,20);
+        ValorSaida.setBounds(150,80,100,20);
         
         //posicionamento botao
         botaoTestar.setBounds(50,120,150,20);
@@ -54,16 +125,16 @@ public class Janela extends JFrame {
 
         //adicionando as propriedades nas janelas
         jal.add(valor);
-        jal.add(SetValor);
+        jal.add(ValorEntrada);
         jal.add(resultado);
-        jal.add(SetSaida);
+        jal.add(ValorSaida);
         jal.add(botaoTestar);
         jal.add(botaoLimpar);
         
         //tamanho da janela
         setSize(400, 250);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setVisible(true);
+     
 
 //=====================================================================================
 
@@ -73,14 +144,14 @@ public class Janela extends JFrame {
       botaoLimpar.addActionListener(new ActionListener(){
       
         public void actionPerformed(ActionEvent evt){
-                act.limparCampos(SetValor, SetSaida);
+                act.limparCampos(ValorEntrada, ValorSaida);
         }
       });
 
     // metodo para testar os valores inseridos no campo
     botaoTestar.addActionListener(new ActionListener(){
         public void actionPerformed(ActionEvent evt){
-                SetSaida.setText("" + act.testarCampos(SetValor));
+                ValorSaida.setText("" + act.testarCampos(ValorEntrada));
         }
     });
     }

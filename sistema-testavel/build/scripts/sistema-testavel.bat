@@ -66,7 +66,7 @@ set CMD_LINE_ARGS=%*
 set CLASSPATH=%APP_HOME%\lib\sistema-testavel.jar;%APP_HOME%\lib\analisador_sequencia_dist.jar;%APP_HOME%\lib\analisador_sequencia_dist.jar
 
 @rem Execute sistema-testavel
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %SISTEMA_TESTAVEL_OPTS%  -classpath "%CLASSPATH%" Model/App %CMD_LINE_ARGS%
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %SISTEMA_TESTAVEL_OPTS%  -classpath "%CLASSPATH%" AppTest %CMD_LINE_ARGS%
 
 :end
 @rem End local scope for the variables with windows NT shell

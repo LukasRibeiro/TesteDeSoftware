@@ -30,4 +30,20 @@ public class Usuario{
     public void setDataNasc(String dataNasc) {
         this.dataNasc = dataNasc;
     }
+
+    @Override
+    public boolean equals (Object obj){
+        
+        if(obj instanceof Usuario){
+            
+            Usuario u = (Usuario) obj;
+            if(u.getUsername().equals(this.getUsername()) && u.getRg().equals(this.getRg()) && u.getDataNasc().equals(this.getDataNasc())){
+                return true;
+            }
+            return false;
+        }
+        return false;
+    } 
+
+    // assertEquals(usuarios.get(1), acha);
 }

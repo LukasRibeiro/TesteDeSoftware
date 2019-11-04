@@ -1,6 +1,7 @@
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvFileSource;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.ValueSource;
 
@@ -33,11 +34,33 @@ public class calculadoraTest {
         assertEquals(x * y, result);
     }
 
-    @ParameterizedTest
-    @ValueSource(ints={1,2,3,4,5,6,7,8,9,10})
-    public void quadradoTest(int x)
+    
+    @ParameterizedTest(name="teste [index] => x ={0} y={1}," + "resultado {2}")
+    @CsvFileSource(resources ="/teste.txt", delimiter = ':')
+    public void somaTestFile(int x, int y, int resultado)
     {   int result;
-        result = cal.quadrado(x);
-        assertEquals(x * x, result);
+        result = cal.soma(x,y);
+        assertEquals(resultado, result);
     }
+
+
+
+
+
+    // @ParameterizedTest(name="teste [index] => x =[0] y=[1]," + "resultado [500]")
+
+    // @CsvFileSource(resources ="/teste.txt", delimiter = ',')
+    // public void multiplicaTestFile(int x, int y)
+    // {   int result;
+    //     result = cal.multiplica(x,y);
+    //     assertEquals(x * y, result);
+    // }
+
+    // @ParameterizedTest
+    // @ValueSource(ints={1,2,3,4,5,6,7,8,9,10})
+    // public void quadradoTest(int x)
+    // {   int result;
+    //     result = cal.quadrado(x);
+    //     assertEquals(x * x, result);
+    // }
 }

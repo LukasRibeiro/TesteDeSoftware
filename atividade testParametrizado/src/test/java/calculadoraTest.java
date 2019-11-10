@@ -34,7 +34,13 @@ public class calculadoraTest {
         assertEquals(x * y, result);
     }
 
+
+// ===========================Utilizando a anotação csvFileSource========================================
+
     
+
+    // so funciona este metodo por enquanto :(
+
     @ParameterizedTest(name="teste [index] => x ={0} y={1}," + "resultado {2}")
     @CsvFileSource(resources ="/teste.txt", delimiter = ':')
     public void somaTestFile(int x, int y, int resultado)
@@ -43,9 +49,29 @@ public class calculadoraTest {
         assertEquals(resultado, result);
     }
 
+    // @ParameterizedTest(name="teste [index] => x ={0} y={1}," + "resultado {2}")
+    // @CsvFileSource(resources ="/teste.txt", delimiter = ':')
+    // public void subtrairTestFile(int x, int y, int resultado){
+    //     int result;
+    //     result = cal.subtrair(x,y)
+    //     assertEquals(resultado, result)   
+    // }
 
-
-
+    // @ParameterizedTest(name="teste [index] => x ={0} y={1}," + "resultado {2}")
+    // @CsvFileSource(resources ="/teste.txt", delimiter = ':')
+    // public void multiplicaTestFileFile(int x, int y, int resultado){
+    //     int result;
+    //     result = cal.multiplica(x,y)
+    //     assertEquals(resultado, result);
+    // }
+    
+    // @ParameterizedTest(name="teste [index] => x ={0} y={1}," + "resultado {2}")
+    // @CsvFileSource(resources ="/teste.txt", delimiter = ':')
+    // public void quadradoTestFile (int x){
+    //     int result;
+    //     result = cal.quadrado(x,x)
+    //     assertEquals(resultado, result);
+    // }
 
     // @ParameterizedTest(name="teste [index] => x =[0] y=[1]," + "resultado [500]")
 

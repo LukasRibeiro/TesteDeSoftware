@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="calculadoraTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2019-11-04T11:55:07" hostname="Lukao" time="0.151">
+<testsuite name="calculadoraTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2019-11-10T02:38:44" hostname="debian" time="0.138">
   <properties/>
-  <testcase name="somaTestFile(int, int, int)[1]" classname="calculadoraTest" time="0.058"/>
-  <testcase name="multiplicaTest(int, int)[1]" classname="calculadoraTest" time="0.003"/>
-  <testcase name="multiplicaTest(int, int)[2]" classname="calculadoraTest" time="0.004"/>
-  <testcase name="multiplicaTest(int, int)[3]" classname="calculadoraTest" time="0.001"/>
-  <testcase name="multiplicaTest(int, int)[4]" classname="calculadoraTest" time="0.001"/>
-  <testcase name="subtrairTest(int, int)[1]" classname="calculadoraTest" time="0.001"/>
+  <testcase name="somaTestFile(int, int, int)[1]" classname="calculadoraTest" time="0.055"/>
+  <testcase name="somaTestFile(int, int, int)[2]" classname="calculadoraTest" time="0.002"/>
+  <testcase name="multiplicaTest(int, int)[1]" classname="calculadoraTest" time="0.002"/>
+  <testcase name="multiplicaTest(int, int)[2]" classname="calculadoraTest" time="0.001"/>
+  <testcase name="multiplicaTest(int, int)[3]" classname="calculadoraTest" time="0.002"/>
+  <testcase name="multiplicaTest(int, int)[4]" classname="calculadoraTest" time="0.002"/>
+  <testcase name="subtrairTest(int, int)[1]" classname="calculadoraTest" time="0.002"/>
   <testcase name="subtrairTest(int, int)[2]" classname="calculadoraTest" time="0.001"/>
-  <testcase name="subtrairTest(int, int)[3]" classname="calculadoraTest" time="0.002"/>
+  <testcase name="subtrairTest(int, int)[3]" classname="calculadoraTest" time="0.001"/>
   <testcase name="subtrairTest(int, int)[4]" classname="calculadoraTest" time="0.001"/>
   <testcase name="somaTest(int, int)[1]" classname="calculadoraTest" time="0.001"/>
   <testcase name="somaTest(int, int)[2]" classname="calculadoraTest" time="0.001"/>
-  <testcase name="somaTest(int, int)[3]" classname="calculadoraTest" time="0.002"/>
-  <testcase name="somaTest(int, int)[4]" classname="calculadoraTest" time="0.0"/>
+  <testcase name="somaTest(int, int)[3]" classname="calculadoraTest" time="0.0"/>
+  <testcase name="somaTest(int, int)[4]" classname="calculadoraTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

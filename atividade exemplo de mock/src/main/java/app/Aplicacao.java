@@ -15,7 +15,7 @@ public class Aplicacao{
 
         Calculadora calmock = Mockito.mock(Calculadora.class);
         Mockito.when(calmock.somar(10f, 10f)).thenReturn(20f);
-        System.out.println(calmock.somar(10f, 10f));   
+        System.out.println(calmock.somar(10f, 10f));
     
 
         //  metodo 2
@@ -36,7 +36,7 @@ public class Aplicacao{
 
         
         // metodo 4 
-        System.out.println("Efetuando o mock efetuando o metodo de multiplicação!");
+        System.out.println("Efetuando o mock efetuando o metodo de divisão!");
 
         // Calculadora calmock = Mockito.mock(Calculadora.class);
         Mockito.when(calmock.dividir(10f, 10f)).thenReturn(1f);

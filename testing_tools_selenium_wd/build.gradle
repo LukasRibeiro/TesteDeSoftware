@@ -1,0 +1,26 @@
+plugins {
+    id 'war'
+    id 'org.gretty' version '2.2.0'
+}
+
+dependencies {
+    
+    providedCompile 'javax.servlet:javax.servlet-api:3.1.0'
+    compile 'javax.servlet:jstl:1.2'
+    testCompileOnly 'org.junit.jupiter:junit-jupiter-api:5.3.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
+    compile 'org.seleniumhq.selenium:selenium-java:3.4.0'
+}
+
+repositories {
+    jcenter()
+}
+
+/* configuração do gretty pra usar tomcat*/
+gretty {
+  servletContainer = 'tomcat8'
+}
+
+test{
+    useJUnitPlatform()
+}

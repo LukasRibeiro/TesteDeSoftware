@@ -8,8 +8,10 @@ package view;
 import static org.junit.Assert.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import java.lang.reflect.Constructor;
+
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
+import org.openqa.selenium.By;  
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -20,6 +22,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
  */
 public class LoginTestDriver {
 
+    public LoginTestDriver(){
+        
+        System.setProperty("webdriver.chrome.driver", "drivers\\chromedriver.exe");    
+        WebDriver driver = new ChromeDriver();
+        driver.get("http://localhost:8080/testing_tools_selenium_wd/");
+    }
 
     @Test
     public void testLogin() throws InterruptedException {
@@ -27,7 +35,7 @@ public class LoginTestDriver {
         System.setProperty("webdriver.chrome.driver", "drivers\\chromedriver.exe");    
         WebDriver driver = new ChromeDriver();
         driver.get("http://localhost:8080/testing_tools_selenium_wd/");
-            
+        
         Thread.sleep(5000);
 
         WebElement nomeUsuario = driver.findElement(By.id("nomeUsuario"));
@@ -45,33 +53,45 @@ public class LoginTestDriver {
 
         Thread.sleep(5000);
 
+
+// ==========================VALIDANDO TEXTOS NA AUTENTICAÇÃO=================================================
+
         String NOME = driver.findElement(By.id("p01")).getText();
-        assertEquals("Nome usuário:fabricio", NOME);
+        assertEquals("Nome usuario:fabricio", NOME);
+
+        System.out.println("Nome usuario: " + NOME);
 
         Thread.sleep(5000);
+
+
+
 
         String SENHA = driver.findElement(By.id("p02")).getText();
         assertTrue(SENHA.equals("Senha: 123"));
         
-        System.out.println(SENHA);
+        System.out.println("senha: " + SENHA);
         
         Thread.sleep(5000);
 
+        
+        
         String IDADE = driver.findElement(By.id("p03")).getText();
         assertEquals("Idade:39", IDADE);
 
-        System.out.println(SENHA);
+        System.out.println("Idade: " + IDADE);
 
         Thread.sleep(5000);
+
+
 
         String ALTURA = driver.findElement(By.id("p04")).getText();
         assertEquals("Altura:1.81", ALTURA);
 
-        System.out.println(SENHA);
+        System.out.println("Altura: " + ALTURA);
 
         Thread.sleep(5000);
 
-        // driver.quit();
+        driver.quit();
     }
 
     

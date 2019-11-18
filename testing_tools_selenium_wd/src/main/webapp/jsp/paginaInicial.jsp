@@ -15,7 +15,7 @@
             String idade = (String) request.getAttribute("Idade");
             String altura = (String) request.getAttribute("Altura");
             
-            out.print("<p id=p01>Nome usuário:" + nomeUsuario + "</p>");
+            out.print("<p id=p01>Nome usuario:" + nomeUsuario + "</p>");
             out.print("<p id=p02>Senha: " + senha + "</p>");
             out.print("<p id=p03>Idade:" + idade + "</p>");
             out.print("<p id=p04>Altura:" + altura + "</p>");

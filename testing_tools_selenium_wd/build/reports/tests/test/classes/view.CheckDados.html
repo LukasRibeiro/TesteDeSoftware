@@ -3,16 +3,17 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta http-equiv="x-ua-compatible" content="IE=edge"/>
-<title>Test results - Package view</title>
+<title>Test results - CheckDados</title>
 <link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
 <link href="../css/style.css" rel="stylesheet" type="text/css"/>
 <script src="../js/report.js" type="text/javascript"></script>
 </head>
 <body>
 <div id="content">
-<h1>Package view</h1>
+<h1>CheckDados</h1>
 <div class="breadcrumbs">
-<a href="../index.html">all</a> &gt; view</div>
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/view.html">view</a> &gt; CheckDados</div>
 <div id="summary">
 <table>
 <tr>
@@ -60,33 +61,54 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Classes</a>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Classes</h2>
+<h2>Tests</h2>
 <table>
-<thread>
+<thead>
 <tr>
-<th>Class</th>
-<th>Tests</th>
-<th>Failures</th>
-<th>Ignored</th>
+<th>Test</th>
 <th>Duration</th>
-<th>Success rate</th>
+<th>Result</th>
 </tr>
-</thread>
+</thead>
 <tr>
-<td class="success">
-<a href="../classes/view.CheckDados.html">CheckDados</a>
-</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>52.278s</td>
-<td class="success">100%</td>
+<td class="success">testLogin()</td>
+<td class="success">52.278s</td>
+<td class="success">passed</td>
 </tr>
 </table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Nome usuario:fabricio
+Senha: 123
+Idade:39
+Altura:1.81
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>Starting ChromeDriver 77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442}) on port 11672
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1575455944.743][WARNING]: This version of ChromeDriver has not been tested with Chrome version 78.
+[1575455946.754][WARNING]: Timed out connecting to Chrome, retrying...
+dez 04, 2019 8:39:08 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMAÇÕES: Detected dialect: W3C
+</pre>
+</span>
 </div>
 </div>
 <div id="footer">

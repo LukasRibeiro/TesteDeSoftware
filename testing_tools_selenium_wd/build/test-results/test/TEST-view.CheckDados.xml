@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="view.CheckDados" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-04T10:39:01" hostname="Lukao" time="52.278">
+  <properties/>
+  <testcase name="testLogin()" classname="view.CheckDados" time="52.278"/>
+  <system-out><![CDATA[Nome usuario:fabricio
+Senha: 123
+Idade:39
+Altura:1.81
+]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442}) on port 11672
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1575455944.743][WARNING]: This version of ChromeDriver has not been tested with Chrome version 78.
+[1575455946.754][WARNING]: Timed out connecting to Chrome, retrying...
+dez 04, 2019 8:39:08 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMAÇÕES: Detected dialect: W3C
+]]></system-err>
+</testsuite>

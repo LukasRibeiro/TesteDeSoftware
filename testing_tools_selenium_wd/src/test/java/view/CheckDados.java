@@ -15,19 +15,17 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 /**
  *
  * @author fabricio
  */
-public class LoginTestDriver {
-
-    public LoginTestDriver(){
-        
-        System.setProperty("webdriver.chrome.driver", "drivers\\chromedriver.exe");    
-        WebDriver driver = new ChromeDriver();
-        driver.get("http://localhost:8080/testing_tools_selenium_wd/");
-    }
+public class CheckDados {
+    
+    // System.setProperty("webdriver.chrome.driver", "drivers\\chromedriver.exe");    
+    // WebDriver driver = new ChromeDriver();
+    // driver.get("http://localhost:8080/testing_tools_selenium_wd/");
 
     @Test
     public void testLogin() throws InterruptedException {
@@ -53,63 +51,45 @@ public class LoginTestDriver {
 
         Thread.sleep(5000);
 
-
 // ==========================VALIDANDO TEXTOS NA AUTENTICAÇÃO=================================================
 
         String NOME = driver.findElement(By.id("p01")).getText();
-        assertEquals("Nome usuario:fabricio", NOME);
+        assertTrue(NOME.equals("Nome usuario:fabricio"));
 
-        System.out.println("Nome usuario: " + NOME);
+        System.out.println(NOME);
 
         Thread.sleep(5000);
 
-
-
+        
 
         String SENHA = driver.findElement(By.id("p02")).getText();
         assertTrue(SENHA.equals("Senha: 123"));
         
-        System.out.println("senha: " + SENHA);
+        System.out.println(SENHA);
         
         Thread.sleep(5000);
 
-        
-        
+
+
         String IDADE = driver.findElement(By.id("p03")).getText();
-        assertEquals("Idade:39", IDADE);
+        assertTrue(IDADE.equals("Idade:39"));
 
-        System.out.println("Idade: " + IDADE);
+        System.out.println(IDADE);
 
         Thread.sleep(5000);
 
-
+        
 
         String ALTURA = driver.findElement(By.id("p04")).getText();
-        assertEquals("Altura:1.81", ALTURA);
+        assertTrue(ALTURA.equals("Altura:1.81"));
 
-        System.out.println("Altura: " + ALTURA);
+        System.out.println(ALTURA);
 
         Thread.sleep(5000);
 
         driver.quit();
     }
 
-    
-    // @Test
-    // public String checkInformation() {
-        
-    //     System.setProperty("webdriver.chrome.driver", "drivers\\chromedriver.exe");    
-    //     WebDriver driver = new ChromeDriver();
-    //     driver.get("http://localhost:8080/testing_tools_selenium_wd/");
-            
-    //     String SENHA = driver.findElement(By.id("p02")).getText();
-    //     assertTrue(SENHA.equals("Senha: 123"));
-
-    //     System.out.println("Senha: 123");
-
-    //     return SENHA;
-
-    // }
 }
 
 

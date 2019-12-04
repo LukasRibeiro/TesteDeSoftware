@@ -11,11 +11,12 @@
     </head>
     <body>
         <form class="baseForm" method="post" action="Autenticar">
-            Nome de Usuário:
+            <label for="">Nome de usuario:</label>
             <input class="formInput formTextInput" id=nomeUsuario type="text" name="nomeUsuario"> 
-            Senha:
+            
+            <label for="">Senha:</label>
             <input class="formInput formTextInput" id=senha type="password" name="senha">
-            Botao autenticar
+            
             <input  class="formInput submitButton" id ="botao" type="submit" value="Autenticar">       
         </form>
           
